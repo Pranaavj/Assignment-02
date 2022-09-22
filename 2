@@ -1,0 +1,23 @@
+import java.util.*; 
+import java.io.*; 
+ public class Exercise102 {
+ public static void main(String[] args)
+ {
+	int[] array_nums = {1,77,-5,2,65,30};
+    int result = 1; 
+	System.out.println("Original Array: "+Arrays.toString(array_nums)); 
+	
+	for(int i = 0; i < array_nums.length; i++)
+     {
+      	if(array_nums[i] == 65 || array_nums[i] == 77)
+		{	
+  		
+		   result =0;
+		}
+      }
+	 if (result==1)
+ 	   System.out.printf( String.valueOf(false));	         
+     else
+	   System.out.printf(String.valueOf(true));
+  }
+}
