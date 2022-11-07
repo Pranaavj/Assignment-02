@@ -1,0 +1,28 @@
+import java.util.*; 
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);    
+        int n;  
+        n=sc.nextInt();  
+        int[] array = new int[n];  
+        for(int i=0; i<n; i++)  {  
+            
+            array[i]=sc.nextInt();  
+        }  
+       int count=0,res=0;
+       for(int i=0;i<n;i++){
+           if(array[i]==65){
+               count=1;
+           }
+           if(array[i]==77){
+               res=1;
+           }
+       }
+       if(res+count==2){
+           System.out.println("True");
+       }
+       else{
+           System.out.println("False");
+       }
+    }
+}
